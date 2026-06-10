@@ -6,7 +6,7 @@ function ApiData() {
   const [error, setError] = useState(null);
 
   // USANDO EL PROXY - No necesita la URL completa
-  const API_URL = '/api/tipoevaluacion';
+ const API_URL = `${import.meta.env.VITE_API_URL}/api/tipoevaluacion`;
 
   useEffect(() => {
     console.log("Llamando a proxy:", API_URL);
